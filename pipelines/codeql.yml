@@ -1,0 +1,29 @@
+trigger: none
+
+# We want this pipeline to execute every Sunday at 9:00am
+schedules:
+  - cron: "0 16 * * Sun" # This is in UTC
+    displayName: Weekly CodeQL
+    branches:
+      include:
+        - main
+
+pool:
+  vmImage: macos-13
+
+variables:
+  - group: OneDrive Android Build
+  - name: Codeql.Enabled
+    value: true
+
+jobs:
+  - job: RunCodeQL
+    displayName: Run CodeQL
+    timeoutInMinutes: 90
+    cancelTimeoutInMinutes: 5
+
+    steps:
+      - template: run_codeql.yml
+        parameters:
+          FluentXMLRef: "master"
+          FluentMotionRef: $(Build.SourceBranch)

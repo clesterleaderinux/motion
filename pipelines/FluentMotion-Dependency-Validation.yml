@@ -1,0 +1,42 @@
+trigger: none
+
+resources:
+  repositories:
+    - repository: odspPipelines
+      type: git
+      name: EFun/ODSPTemplates
+      ref: refs/heads/main
+
+variables:
+  - template: v1/OdspVariables.yml@odspPipelines
+
+parameters:
+  - name: environment
+    displayName: ODSP.PT Environment
+    type: string
+    default: Prod
+    values:
+      - Prod
+      - PPE
+      - Test
+
+
+extends:
+  template: v1/OdspPipeline.yml@odspPipelines
+  parameters:
+    environment: ${{ parameters.environment }}
+    settings:
+      # Available template options: Official, Unofficial, more information about unofficial/official templates: https://aka.ms/odsptemplate/compare-modes
+      template: Official
+    stages:
+      - stage: build
+        displayName: Validate dependencies
+        pool:
+          name: Azure Pipelines
+          image: macos-latest-internal
+          os: macOS
+        jobs:
+          - job: CheckDependencies
+            displayName: Check dependencies
+            steps:
+              - script: echo "TODO Validate dependencies"

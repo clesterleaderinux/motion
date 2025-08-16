@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+android {
+    namespace 'com.microsoft.fluentmotion'
+    compileSdkVersion rootProject.ext.projectCompileSdkVersion
+    buildToolsVersion rootProject.ext.projectBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.projectMinSdkVersion
+        targetSdkVersion rootProject.ext.projectTargetSdkVersion
+        compileSdk rootProject.ext.projectCompileSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        android.buildFeatures.buildConfig true
+        buildConfigField "Boolean", "DISABLE_ANIMATION_FOR_TESTING", "false"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+        buildConfig true
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs = ['lib/src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+        test {
+            java.srcDirs = ['lib/src/test/kotlin', 'lib/src/test/java']
+        }
+    }
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$androidxCoreKtLibraryVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.ext.kotlin_lifecycle_version"
+    implementation "androidx.compose.material:material:$rootProject.ext.compose_version"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerviewLibraryVersion"
+    implementation "com.airbnb.android:lottie-compose:$rootProject.ext.lottieComposeVersion"
+    implementation "com.airbnb.android:lottie:$rootProject.ext.lottieLibraryVersion"
+    implementation "androidx.appcompat:appcompat-resources:$rootProject.ext.appCompatLibraryVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatLibraryVersion"
+    implementation "com.google.android.material:material:$rootProject.ext.googleMaterialLibraryVersion"
+    implementation "androidx.compose.ui:ui:$rootProject.ext.compose_version"
+    implementation "androidx.compose.ui:ui-util:$rootProject.ext.compose_version"
+    implementation "androidx.compose.material:material:$rootProject.ext.compose_version"
+    implementation "androidx.compose.runtime:runtime:$rootProject.ext.compose_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.ext.kotlin_lifecycle_version"
+    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutLibraryVersion"
+    implementation "com.facebook.shimmer:shimmer:$rootProject.ext.shimmer_version"
+    testImplementation "junit:junit:$rootProject.ext.junitLibraryVersion"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.ext.kotlin_coroutines_version"
+    testImplementation "org.mockito:mockito-core:$rootProject.ext.mockitoLibraryVersion"
+    testImplementation "org.mockito:mockito-inline:$rootProject.ext.mockitoLibraryVersion"
+    testImplementation "org.robolectric:robolectric:4.7.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.testEspressoLibraryVersion"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$rootProject.ext.compose_version"
+    androidTestImplementation "org.mockito:mockito-core:$rootProject.ext.mockitoLibraryVersion"
+    androidTestImplementation "org.mockito.kotlin:mockito-kotlin:$rootProject.ext.mockitoKotlinVersion"
+    debugImplementation "androidx.compose.ui:ui-tooling:$rootProject.ext.compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$rootProject.ext.compose_version"
+}

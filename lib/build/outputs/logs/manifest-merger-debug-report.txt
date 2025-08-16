@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml:2:13-83
+INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml:2:13-83
+	package
+		INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml
+	xmlns:android
+		ADDED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml:2:23-81
+uses-sdk
+INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml reason: use-sdk injection requested
+INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml
+INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml
+	android:targetSdkVersion
+		INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml
+	android:minSdkVersion
+		INJECTED from /Users/carinlester/Desktop/OneDrive/AndroidClient/FluentMotion/lib/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest283209404300917511.xml

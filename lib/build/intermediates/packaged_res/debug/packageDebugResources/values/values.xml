@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color|reference" name="colorPivotBadgeFill"/>
+    <attr format="color|reference" name="colorPivotBadgeStroke"/>
+    <bool name="is_tablet_size">false</bool>
+    <color name="black">#FF000000</color>
+    <color name="brand">#0F6CBD</color>
+    <color name="bright_green">#00FF00</color>
+    <color name="clear">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="tabLayoutIndicatorHeightInDp">3dp</dimen>
+    <dimen name="tabStartAndEndMarginInDp">16dp</dimen>
+    <declare-styleable name="LottieAnimationButton">
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionPlayerEnabledSwitch">
+        <attr format="string" name="motion_enabled_user_prefs_file_key"/>
+        <attr format="string" name="motion_enabled_user_prefs_boolean_key"/>
+    </declare-styleable>
+    <declare-styleable name="MotionStateView">
+        <attr format="reference" name="motion_play_active"/>
+        <attr format="reference" name="motion_play_deactive"/>
+        <attr format="color" name="motion_play_disabled_color"/>
+        <attr format="color" name="motion_play_enabled_color"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewAnimatedHorizontalSlider">
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewCardViewLayout">
+        <attr format="dimension" name="motion_cardElevationEnter"/>
+        <attr format="dimension" name="motion_cardElevationIn"/>
+        <attr format="dimension" name="motion_cardElevationExit"/>
+        <attr format="dimension" name="motion_corner_radius_enter"/>
+        <attr format="dimension" name="motion_corner_radius_in"/>
+        <attr format="dimension" name="motion_corner_radius_exit"/>
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewConstraintLayout">
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_eEnter"/>
+        <attr name="motion_eIn"/>
+        <attr name="motion_eExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewCoordinatorLayout">
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_eEnter"/>
+        <attr name="motion_eIn"/>
+        <attr name="motion_eExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewFrameLayout">
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_eEnter"/>
+        <attr name="motion_eIn"/>
+        <attr name="motion_eExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewGridLayout">
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_eEnter"/>
+        <attr name="motion_eIn"/>
+        <attr name="motion_eExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewGroupFullScreen">
+        <attr format="string" name="motion_full_screen_container_key"/>
+        <attr format="float" name="motion_full_screen_container_x_target"/>
+        <attr format="float" name="motion_full_screen_container_y_target"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewLinearLayout">
+        <attr format="integer" name="motion_chain_index"/>
+        <attr format="integer" name="motion_chain_delay"/>
+        <attr format="string" name="motion_chain_key"/>
+        <attr name="motion_type_key">
+            <flag name="none" value="0"/>
+            <flag name="translationX" value="4"/>
+            <flag name="translationY" value="8"/>
+            <flag name="alpha" value="16"/>
+            <flag name="scale" value="32"/>
+            <flag name="scaleX" value="64"/>
+            <flag name="scaleY" value="128"/>
+            <flag name="resize" value="256"/>
+            <flag name="scrollX" value="512"/>
+            <flag name="elevation" value="1024"/>
+            <flag name="color" value="1200"/>
+            <flag name="cornerRadius" value="1201"/>
+            <flag name="cardElevation" value="1203"/>
+            <flag name="indicatorLeft" value="1300"/>
+            <flag name="indicatorWidth" value="1400"/>
+        </attr>
+        <attr format="string" name="on_enter_text"/>
+        <attr format="string" name="on_exit_text"/>
+        <attr format="string" name="on_in_text"/>
+        <attr format="boolean" name="motion_playtogether"/>
+        <attr format="string" name="motion_key"/>
+        <attr format="boolean" name="motion_enable_floating_view"/>
+        <attr name="motion_duration">
+            <enum name="durationShort01" value="50"/>
+            <enum name="durationShort02r" value="100"/>
+            <enum name="durationShort03" value="150"/>
+            <enum name="durationMedium01" value="200"/>
+            <enum name="durationMedium02" value="250"/>
+            <enum name="durationMedium03" value="300"/>
+            <enum name="durationLong01" value="400"/>
+            <enum name="durationLong02" value="500"/>
+            <enum name="testableSlow" value="1000"/>
+        </attr>
+        <attr format="enum" name="motion_transition">
+            <enum name="enter" value="0"/>
+            <enum name="exit" value="1"/>
+            <enum name="fullscreen" value="2"/>
+        </attr>
+        <attr format="enum" name="motion_curve">
+            <enum name="easingLinear" value="0"/>
+            <enum name="easingEase01" value="1"/>
+            <enum name="easingEase02" value="2"/>
+            <enum name="easingDecelerate01" value="3"/>
+            <enum name="easingDecelerate02" value="4"/>
+            <enum name="easingDecelerate03" value="5"/>
+            <enum name="easingAcelerate01" value="6"/>
+            <enum name="easingAcelerate02" value="7"/>
+            <enum name="easingAcelerate03" value="8"/>
+        </attr>
+        <attr format="dimension" name="motion_xEnter"/>
+        <attr format="dimension" name="motion_xIn"/>
+        <attr format="dimension" name="motion_xExit"/>
+        <attr format="dimension" name="motion_yEnter"/>
+        <attr format="dimension" name="motion_yIn"/>
+        <attr format="dimension" name="motion_yExit"/>
+        <attr format="float" name="motion_sEnter"/>
+        <attr format="float" name="motion_sIn"/>
+        <attr format="float" name="motion_sExit"/>
+        <attr format="float" name="motion_aEnter"/>
+        <attr format="float" name="motion_aIn"/>
+        <attr format="float" name="motion_aExit"/>
+        <attr format="dimension" name="motion_wEnter"/>
+        <attr format="dimension" name="motion_wIn"/>
+        <attr format="dimension" name="motion_wExit"/>
+        <attr format="dimension" name="motion_hEnter"/>
+        <attr format="dimension" name="motion_hIn"/>
+        <attr format="dimension" name="motion_hExit"/>
+        <attr format="float" name="motion_eEnter"/>
+        <attr format="float" name="motion_eIn"/>
+        <attr format="float" name="motion_eExit"/>
+        <attr format="float" name="motion_scrollXEnter"/>
+        <attr format="float" name="motion_scrollXIn"/>
+        <attr format="float" name="motion_scrollXExit"/>
+        <attr format="reference" name="motion_gEnter"/>
+        <attr format="reference" name="motion_gIn"/>
+        <attr format="reference" name="motion_gExit"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewRelativeLayout">
+        <attr name="motion_chain_index"/>
+        <attr name="motion_chain_delay"/>
+        <attr name="motion_chain_key"/>
+        <attr name="motion_key"/>
+        <attr name="motion_enable_floating_view"/>
+        <attr name="motion_playtogether"/>
+        <attr name="motion_transition"/>
+        <attr name="motion_curve"/>
+        <attr name="motion_duration"/>
+        <attr name="motion_type_key"/>
+        <attr name="motion_xEnter"/>
+        <attr name="motion_xIn"/>
+        <attr name="motion_xExit"/>
+        <attr name="motion_yEnter"/>
+        <attr name="motion_yIn"/>
+        <attr name="motion_yExit"/>
+        <attr name="motion_sEnter"/>
+        <attr name="motion_sIn"/>
+        <attr name="motion_sExit"/>
+        <attr name="motion_aEnter"/>
+        <attr name="motion_aIn"/>
+        <attr name="motion_aExit"/>
+        <attr name="motion_wEnter"/>
+        <attr name="motion_wIn"/>
+        <attr name="motion_wExit"/>
+        <attr name="motion_hEnter"/>
+        <attr name="motion_hIn"/>
+        <attr name="motion_hExit"/>
+        <attr name="motion_eEnter"/>
+        <attr name="motion_eIn"/>
+        <attr name="motion_eExit"/>
+        <attr name="motion_scrollXEnter"/>
+        <attr name="motion_scrollXIn"/>
+        <attr name="motion_scrollXExit"/>
+        <attr name="motion_gEnter"/>
+        <attr name="motion_gIn"/>
+        <attr name="motion_gExit"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="MotionViewTabLayout">
+        <attr format="color" name="indicator_color"/>
+        <attr format="dimension" name="indicator_stroke_thickness"/>
+        <attr format="dimension" name="indicator_start_margin"/>
+        <attr format="color" name="indicator_gradient_start_color"/>
+        <attr format="color" name="indicator_gradient_end_color"/>
+        <attr format="color" name="indicator_disabled_color"/>
+        <attr format="color" name="background_color"/>
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+    <declare-styleable name="ThemeableAnimationView">
+        <attr name="on_enter_text"/>
+        <attr name="on_exit_text"/>
+        <attr name="on_in_text"/>
+    </declare-styleable>
+</resources>
