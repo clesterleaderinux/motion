@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.util
+package tfmf.mobile.ui.util
 
 import android.content.Context
 import android.graphics.Color
@@ -14,12 +14,12 @@ import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.util.MotionUtil.dpToPx
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewShimmerLayout
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.util.MotionUtil.dpToPx
+import tfmf.mobile.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.xml.layouts.MotionViewShimmerLayout
 import kotlin.math.roundToInt
 
 /**

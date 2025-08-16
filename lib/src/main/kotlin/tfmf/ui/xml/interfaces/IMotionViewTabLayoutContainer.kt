@@ -1,6 +1,6 @@
-package com.microsoft.fluentmotion.ui.xml.interfaces
+package tfmf.mobile.ui.xml.interfaces
 
-import com.microsoft.fluentmotion.ui.xml.components.MotionViewTabLayout
+import tfmf.mobile.ui.xml.components.MotionViewTabLayout
 
 interface IMotionViewTabLayoutContainer {
 

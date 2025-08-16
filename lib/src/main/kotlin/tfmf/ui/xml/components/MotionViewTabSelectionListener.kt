@@ -1,12 +1,12 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.xml.base.MotionViewBase
 import kotlin.math.absoluteValue
 
 /**

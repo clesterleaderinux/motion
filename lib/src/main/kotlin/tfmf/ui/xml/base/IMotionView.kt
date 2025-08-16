@@ -1,10 +1,10 @@
-package com.microsoft.fluentmotion.ui.xml.base
+package tfmf.mobile.ui.xml.base
 
 import android.view.View
 import android.view.animation.Interpolator
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.xml.player.MotionPlayer
 
 // to be used with any view that will be needed and wrapped with a MotionPlayer
 

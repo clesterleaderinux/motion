@@ -1,15 +1,15 @@
-package com.microsoft.fluentmotion.ui.xml.layouts
+package tfmf.mobile.ui.xml.layouts
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.xml.base.MotionViewBase
 
 /**
  * A custom `LinearLayout` that supports shimmer effects and motion transitions.

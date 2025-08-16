@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.telemetry
+package tfmf.mobile.ui.telemetry
 
 /**
  * Interface for logging telemetry events.

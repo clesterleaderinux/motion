@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import androidx.annotation.ColorInt
 import androidx.annotation.RawRes

@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.base
+package tfmf.mobile.ui.xml.base
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,12 +6,12 @@ import androidx.annotation.ColorInt
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.model.KeyPath
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.util.LottieThemeColorHelper
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.util.LottieThemeColorHelper
 
 /**
  * A custom view that extends LottieAnimationView to support theming by changing colors dynamically.

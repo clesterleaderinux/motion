@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.util
+package tfmf.mobile.ui.util
 
 import android.graphics.Color
 import android.graphics.ColorFilter

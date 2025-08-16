@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.animation.TypeEvaluator
 import android.animation.ValueAnimator
@@ -19,19 +19,19 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.forEach
 import com.google.android.material.tabs.TabLayout
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.IndicatorOffset
-import com.microsoft.fluentmotion.ui.IndicatorWidth
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionScaleFactor
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
-import com.microsoft.fluentmotion.ui.util.MotionUtil
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
-import com.microsoft.fluentmotion.ui.xml.interfaces.ISliderView
+import tfmf.mobile.ui.IndicatorOffset
+import tfmf.mobile.ui.IndicatorWidth
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionScaleFactor
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.util.MotionUtil
+import tfmf.mobile.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.xml.interfaces.ISliderView
 import kotlin.math.ceil
 
 /**

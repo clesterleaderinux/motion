@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.microsoft.fluentmotion'
+    namespace 'tfmf.mobile.ui'
     compileSdkVersion rootProject.ext.projectCompileSdkVersion
     buildToolsVersion rootProject.ext.projectBuildToolsVersion
 

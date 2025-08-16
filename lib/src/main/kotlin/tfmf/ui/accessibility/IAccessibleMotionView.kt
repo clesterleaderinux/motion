@@ -1,7 +1,7 @@
-package com.microsoft.fluentmotion.ui.accessibility
+package tfmf.mobile.ui.accessibility
 
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.telemetry.TelemetryEvent
 
 /**
  * Accessibility for Talkback

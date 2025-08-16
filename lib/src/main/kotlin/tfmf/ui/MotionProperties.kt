@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui
+package tfmf.mobile.ui
 
 import android.view.View
 import android.view.animation.Interpolator
@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
 import androidx.core.view.animation.PathInterpolatorCompat
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.compose.MotionLinks
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.compose.MotionLinks
+import tfmf.mobile.ui.xml.player.MotionPlayer
 
 /**
  * Complete motion chain for UIViews using a MotionPlayer

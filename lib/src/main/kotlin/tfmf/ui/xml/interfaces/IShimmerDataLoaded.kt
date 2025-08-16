@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.interfaces
+package tfmf.mobile.ui.xml.interfaces
 
 import androidx.fragment.app.FragmentActivity
 

@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.util
+package tfmf.mobile.ui.util
 
 import android.animation.Animator
 import android.animation.AnimatorSet
@@ -32,17 +32,17 @@ import androidx.annotation.MainThread
 import androidx.compose.ui.graphics.Color
 import androidx.core.graphics.drawable.toDrawable
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.MotionInterpolator
-import com.microsoft.fluentmotion.ui.MotionLinkComposableProps
-import com.microsoft.fluentmotion.ui.MotionScaleFactor
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.xml.base.IMotionView
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewCardViewLayout
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.MotionInterpolator
+import tfmf.mobile.ui.MotionLinkComposableProps
+import tfmf.mobile.ui.MotionScaleFactor
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.xml.base.IMotionView
+import tfmf.mobile.ui.xml.layouts.MotionViewCardViewLayout
+import tfmf.mobile.ui.xml.player.MotionPlayer
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.cancel
 import java.io.ByteArrayOutputStream

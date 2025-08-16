@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,7 +8,7 @@ import android.graphics.RectF
 import android.graphics.Shader
 import android.util.AttributeSet
 import android.view.View
-import com.microsoft.fluentmotion.ui.util.MotionUtil
+import tfmf.mobile.ui.util.MotionUtil
 
 /**
  * A custom View that draws a border with a linear gradient and rounded corners.

@@ -1,20 +1,20 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.view.View
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.MotionChain
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionScaleFactor
-import com.microsoft.fluentmotion.ui.MotionState
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.Stagger
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.MotionChain
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionScaleFactor
+import tfmf.mobile.ui.MotionState
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.Stagger
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.xml.player.MotionPlayer
 
 /**
  * Defines a layout that allows cascading animations for its child views.

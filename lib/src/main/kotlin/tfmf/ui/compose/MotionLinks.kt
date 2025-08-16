@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.compose
+package tfmf.mobile.ui.compose
 
 import androidx.compose.animation.core.TweenSpec
 import androidx.compose.animation.core.animate
@@ -23,21 +23,20 @@ import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import com.microsoft.fluentmotion.BuildConfig
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.Elevation
-import com.microsoft.fluentmotion.ui.MotionLinkComposableProps
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Resize
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.TranslationX
-import com.microsoft.fluentmotion.ui.TranslationY
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
-import com.microsoft.fluentmotion.ui.util.MotionUtil
+import fluent.compose.demo.fluentmotion.ui.Alpha
+import fluent.compose.demo.fluentmotion.ui.Elevation
+import fluent.compose.demo.fluentmotion.ui.MotionLinkComposableProps
+import fluent.compose.demo.fluentmotion.ui.MotionTypeKey
+import fluent.compose.demo.fluentmotion.ui.Resize
+import fluent.compose.demo.fluentmotion.ui.Scale
+import fluent.compose.demo.fluentmotion.ui.TranslationX
+import fluent.compose.demo.fluentmotion.ui.TranslationY
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.util.MotionUtil
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -110,9 +109,9 @@ class MotionLinks : ICancellable, ITelemetryLoggable {
         var duration = motionLinkComposableProps.duration.speedInMillis.toInt()
         // only play the animation if it is configured in the
         // gradle file or global motion is enabled
-        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
-            duration = 0
-        }
+//        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
+//            duration = 0
+//        }
         val coroutineScope = rememberCoroutineScope()
         MotionUtil.appendRunningAnimationCoroutine(motionLinkComposableProps.chainId, coroutineScope)
         val animationSpec =
@@ -253,9 +252,9 @@ class MotionLinks : ICancellable, ITelemetryLoggable {
         var duration = motionLinkComposableProps.duration.speedInMillis.toInt()
         // only play the animation if it is configured in the
         // gradle file or global motion is enabled
-        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
-            duration = 0
-        }
+//        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
+//            duration = 0
+//        }
 
         // Prepare a coroutine scope for launching animations
         val coroutineScope = rememberCoroutineScope()
@@ -411,9 +410,9 @@ class MotionLinks : ICancellable, ITelemetryLoggable {
         var elevation by remember { mutableFloatStateOf(elevationType?.eEnter ?: 0f) }
         var duration = motionLinkComposableProps.duration.speedInMillis.toInt()
         // gradle file or global motion is enabled
-        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
-            duration = 0
-        }
+//        if (BuildConfig.DISABLE_ANIMATION_FOR_TESTING || !MotionUtil.animationsEnabled) {
+//            duration = 0
+//        }
 
         // Prepare a coroutine scope for launching animations
         val coroutineScope = rememberCoroutineScope()

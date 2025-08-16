@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,19 +12,19 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Resize
-import com.microsoft.fluentmotion.ui.TranslationX
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
-import com.microsoft.fluentmotion.ui.xml.interfaces.ISliderView
-import com.microsoft.fluentmotion.ui.xml.interfaces.SliderElementListener
-import com.microsoft.fluentmotion.ui.xml.interfaces.SliderFragmentSwitchListener
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.Resize
+import tfmf.mobile.ui.TranslationX
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.xml.interfaces.ISliderView
+import tfmf.mobile.ui.xml.interfaces.SliderElementListener
+import tfmf.mobile.ui.xml.interfaces.SliderFragmentSwitchListener
+import tfmf.mobile.ui.xml.layouts.MotionViewLinearLayout
 
 
 /**

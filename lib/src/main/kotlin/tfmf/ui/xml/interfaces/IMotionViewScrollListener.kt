@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.interfaces
+package tfmf.mobile.ui.xml.interfaces
 
 /**
  * Interface for listening to motion view scroll events.

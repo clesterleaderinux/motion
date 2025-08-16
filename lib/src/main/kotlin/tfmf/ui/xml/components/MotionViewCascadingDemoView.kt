@@ -1,12 +1,12 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.View
 import android.widget.TextView
-import com.microsoft.fluentmotion.ui.xml.components.MotionViewCascadingLayout
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+import tfmf.mobile.ui.xml.components.MotionViewCascadingLayout
+import tfmf.mobile.ui.xml.layouts.MotionViewLinearLayout
 
 /**
  * Demo component that shows how to use MotionViewCascadingLayout to animate a set of child views.

@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.player
+package tfmf.mobile.ui.xml.player
 
 import android.animation.Animator
 import android.animation.AnimatorSet
@@ -7,29 +7,29 @@ import android.view.animation.Interpolator
 import androidx.core.animation.doOnEnd
 import androidx.core.animation.doOnStart
 import com.microsoft.fluentmotion.BuildConfig
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.CardViewElevation
-import com.microsoft.fluentmotion.ui.CornerRadius
-import com.microsoft.fluentmotion.ui.IndicatorOffset
-import com.microsoft.fluentmotion.ui.IndicatorWidth
-import com.microsoft.fluentmotion.ui.MotionChain
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionInterpolator
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.Resize
-import com.microsoft.fluentmotion.ui.Rotation
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.ScrollX
-import com.microsoft.fluentmotion.ui.TranslationX
-import com.microsoft.fluentmotion.ui.TranslationXTarget
-import com.microsoft.fluentmotion.ui.TranslationY
-import com.microsoft.fluentmotion.ui.TranslationYTarget
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.util.MotionUtil
-import com.microsoft.fluentmotion.ui.xml.base.IMotionView
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.CardViewElevation
+import tfmf.mobile.ui.CornerRadius
+import tfmf.mobile.ui.IndicatorOffset
+import tfmf.mobile.ui.IndicatorWidth
+import tfmf.mobile.ui.MotionChain
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionInterpolator
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.Resize
+import tfmf.mobile.ui.Rotation
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.ScrollX
+import tfmf.mobile.ui.TranslationX
+import tfmf.mobile.ui.TranslationXTarget
+import tfmf.mobile.ui.TranslationY
+import tfmf.mobile.ui.TranslationYTarget
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.util.MotionUtil
+import tfmf.mobile.ui.xml.base.IMotionView
 
 
 /**

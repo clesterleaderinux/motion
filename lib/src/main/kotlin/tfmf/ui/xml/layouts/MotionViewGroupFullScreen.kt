@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.layouts
+package tfmf.mobile.ui.xml.layouts
 
 import android.animation.Animator
 import android.content.Context
@@ -11,11 +11,11 @@ import android.widget.ImageView
 import com.airbnb.lottie.LottieCompositionFactory
 import com.airbnb.lottie.LottieDrawable
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
 
 /**
  * A wrapper for a rootView that contains multiple animations in

@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.components
+package tfmf.mobile.ui.xml.components
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,16 +15,16 @@ import com.airbnb.lottie.LottieProperty
 import com.airbnb.lottie.SimpleColorFilter
 import com.airbnb.lottie.model.KeyPath
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.actions.ICancellable
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
-import com.microsoft.fluentmotion.ui.util.MotionUtil
-import com.microsoft.fluentmotion.ui.xml.interfaces.ISliderView
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout
-import com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.actions.ICancellable
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.util.MotionUtil
+import tfmf.mobile.ui.xml.interfaces.ISliderView
+import tfmf.mobile.ui.xml.layouts.MotionViewFrameLayout
+import tfmf.mobile.ui.xml.layouts.MotionViewLinearLayout
 import kotlin.math.max
 
 // Lottie button that can be used as standalone or as part of a slider view

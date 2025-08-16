@@ -1,15 +1,15 @@
-package com.microsoft.fluentmotion.ui.xml.fragments
+package tfmf.mobile.ui.xml.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.TranslationX
-import com.microsoft.fluentmotion.ui.xml.base.MotionViewBase
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.TranslationX
+import tfmf.mobile.ui.xml.base.MotionViewBase
 
 /**
  * A fragment class for displaying motion views.

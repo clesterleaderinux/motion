@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.exception
+package tfmf.mobile.ui.xml.exception
 
 /**
  * Custom exception class for handling MotionViewGroup related errors.

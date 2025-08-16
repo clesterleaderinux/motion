@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FluentMotion"
+rootProject.name = "AndroidMotion"

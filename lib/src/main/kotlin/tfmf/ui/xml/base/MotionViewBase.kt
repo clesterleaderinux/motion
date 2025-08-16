@@ -1,20 +1,20 @@
-package com.microsoft.fluentmotion.ui.xml.base
+package tfmf.mobile.ui.xml.base
 
 import android.util.Log
 import android.view.View
 import android.view.animation.Interpolator
-import com.microsoft.fluentmotion.ui.MotionCurve
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionInterpolator
-import com.microsoft.fluentmotion.ui.MotionState
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.telemetry.ITelemetryLoggable
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryEvent
-import com.microsoft.fluentmotion.ui.telemetry.TelemetryLogger
-import com.microsoft.fluentmotion.ui.util.MotionUtil
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.MotionCurve
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionInterpolator
+import tfmf.mobile.ui.MotionState
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.telemetry.ITelemetryLoggable
+import tfmf.mobile.ui.telemetry.TelemetryEvent
+import tfmf.mobile.ui.telemetry.TelemetryLogger
+import tfmf.mobile.ui.util.MotionUtil
+import tfmf.mobile.ui.xml.player.MotionPlayer
 
 // A class that represents a base for motion-enabled views, conforms to IMotionView interface.
 class MotionViewBase @JvmOverloads constructor(

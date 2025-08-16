@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.layouts
+package tfmf.mobile.ui.xml.layouts
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,24 +6,24 @@ import android.view.View
 import android.view.animation.Interpolator
 import android.widget.GridLayout
 import com.microsoft.fluentmotion.R
-import com.microsoft.fluentmotion.ui.Alpha
-import com.microsoft.fluentmotion.ui.Elevation
-import com.microsoft.fluentmotion.ui.MotionCurve
-import com.microsoft.fluentmotion.ui.MotionDuration
-import com.microsoft.fluentmotion.ui.MotionInterpolator
-import com.microsoft.fluentmotion.ui.MotionState
-import com.microsoft.fluentmotion.ui.MotionTypeKey
-import com.microsoft.fluentmotion.ui.MotionValue
-import com.microsoft.fluentmotion.ui.Resize
-import com.microsoft.fluentmotion.ui.Scale
-import com.microsoft.fluentmotion.ui.ScrollX
-import com.microsoft.fluentmotion.ui.TranslationX
-import com.microsoft.fluentmotion.ui.TranslationY
-import com.microsoft.fluentmotion.ui.accessibility.IAccessibleMotionView
-import com.microsoft.fluentmotion.ui.actions.CancellationError
-import com.microsoft.fluentmotion.ui.util.MotionUtil
-import com.microsoft.fluentmotion.ui.xml.base.IMotionView
-import com.microsoft.fluentmotion.ui.xml.player.MotionPlayer
+import tfmf.mobile.ui.Alpha
+import tfmf.mobile.ui.Elevation
+import tfmf.mobile.ui.MotionCurve
+import tfmf.mobile.ui.MotionDuration
+import tfmf.mobile.ui.MotionInterpolator
+import tfmf.mobile.ui.MotionState
+import tfmf.mobile.ui.MotionTypeKey
+import tfmf.mobile.ui.MotionValue
+import tfmf.mobile.ui.Resize
+import tfmf.mobile.ui.Scale
+import tfmf.mobile.ui.ScrollX
+import tfmf.mobile.ui.TranslationX
+import tfmf.mobile.ui.TranslationY
+import tfmf.mobile.ui.accessibility.IAccessibleMotionView
+import tfmf.mobile.ui.actions.CancellationError
+import tfmf.mobile.ui.util.MotionUtil
+import tfmf.mobile.ui.xml.base.IMotionView
+import tfmf.mobile.ui.xml.player.MotionPlayer
 
 /**
  * Grid Layout that wraps a view or viewgroup an animates the components

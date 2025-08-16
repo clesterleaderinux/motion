@@ -1,4 +1,4 @@
-package com.microsoft.fluentmotion.ui.xml.fragments
+package tfmf.mobile.ui.xml.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
