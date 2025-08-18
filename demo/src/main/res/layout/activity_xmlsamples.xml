@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorNeutralBackground1">
+
+    <!-- This LinearLayout represents the contents of the screen  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorNeutralBackground1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/open_nav"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="12dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_fluent_navigation_24_filled" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?typographyTitle2"
+                android:layout_gravity="center_vertical"
+                android:textColor="?attr/colorNeutralForeground1"
+                android:layout_marginStart="12dp"
+                android:gravity="center_vertical"
+                android:text="Demo"/>
+        </LinearLayout>
+
+        <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorNeutralBackground1" />
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?colorNeutralBackground2"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

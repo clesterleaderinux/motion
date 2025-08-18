@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- Fluent 2 Demo Theme -->
+    <style name="Theme.Fluent2.Demo.DayNight" parent="Theme.Fluent2.Demo.Day" />
+
+    <style name="Theme.Fluent2.Demo.Day" parent="Base.Theme.Fluent2.Demo">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Fluent2.Demo.Night" parent="Base.Theme.Fluent2.Demo">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Fluent 2 Demo for day mode. Set attributes for day mode -->
+    <style name="Base.Theme.Fluent2.Demo" parent="Base.Theme.Fluent2.DayNight">
+        <item name="colorPrimary">?colorBrandBackground1</item>
+        <item name="colorPrimaryDark">?colorBrandBackground3</item>
+        <item name="colorAccent">?colorBrandBackground1</item>
+        <item name="android:colorBackground">?colorNeutralBackground1</item>
+        <item name="android:textColorPrimary">?colorNeutralForeground1</item>
+        <item name="android:textColorSecondary">?colorNeutralForeground2</item>
+        <item name="android:statusBarColor">?android:colorBackground</item>
+        <item name="appBarLayoutStyle">@style/Widget.Design.AppBarLayout.Demo</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

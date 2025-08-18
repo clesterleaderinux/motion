@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/banner_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- The default setting for app:bannerVariant is "standard," so there is no need
+        to configure it. This is provided here solely for demonstration purposes. -->
+        <com.microsoft.fluentxml.components.banner.BannerView
+            android:id="@+id/banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fluent_global_size_160"
+            android:layout_marginRight="@dimen/fluent_global_avatar_size_160"
+            android:layout_marginLeft="@dimen/fluent_global_avatar_size_160"
+            app:title="@string/app_name"
+            app:bannerVariant="standard"
+            app:drawable="@drawable/ic_checkmark_12dp"
+            app:message="@string/hint_search_text"
+            app:backgroundCircleEnabled="true" />
+    </LinearLayout>
+</ScrollView>
