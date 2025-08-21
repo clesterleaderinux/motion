@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.microsoft.fluentxml.components.FirstRunExperienceView
+        android:id="@+id/fre"
+        style="@style/FirstRunExperience.LongSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawable="@drawable/oobe_welcome_new"
+        app:orientation="vertical"
+        app:primaryButtonText="Primary"
+        app:title="Your data, your way"
+        app:summary="@string/long_content_summary"/>
+</FrameLayout>

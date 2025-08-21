@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+            android:id="@+id/sliding_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:elevation="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pivot_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorNeutralBackground2"
+                android:src="@drawable/photospivot" />
+
+            <com.microsoft.fluentmotion.ui.xml.components.MotionViewTabLayout
+                android:id="@+id/horizontalSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-30dp"
+                app:indicator_start_margin="0dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="?attr/colorNeutralBackground1"
+                android:elevation="6dp" />
+        </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>
+
+        <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/filesection1"
+                    android:layout_width="410dp"
+                    android:layout_height="340dp"
+                    android:src="@drawable/filesection1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/filesection2"
+                    android:layout_width="410dp"
+                    android:layout_height="340dp"
+                    android:src="@drawable/filesection2" />
+            </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>
+
+            <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+                    android:id="@+id/frag_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:visibility="visible">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000" />
+
+                </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>
+            </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout>
+        </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewFrameLayout>
+    </LinearLayout>
+</com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>

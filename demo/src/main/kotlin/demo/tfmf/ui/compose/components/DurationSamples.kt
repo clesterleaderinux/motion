@@ -1,0 +1,71 @@
+package demo.tfmf.ui.compose.components
+
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.unit.dp
+import com.microsoft.fluentmotion.ui.util.MotionUtil
+import fluent.compose.Text
+import fluent.compose.demo.fluentmotion.ui.MotionCurve
+import fluent.compose.demo.fluentmotion.ui.MotionDuration
+import fluent.compose.demo.fluentmotion.ui.MotionLinkComposableProps
+import fluent.compose.demo.fluentmotion.ui.MotionTypeKey
+import fluent.compose.demo.fluentmotion.ui.Resize
+import fluent.compose.demo.fluentmotion.ui.TranslationX
+import fluent.compose.demo.ui.util.ChainType
+import fluent.compose.theme.OneDriveTheme
+
+internal val DurationSample: @Composable () -> Unit = {
+    DurationAnimations()
+    LazyColumn(modifier = Modifier.fillMaxWidth()) {
+        MotionUtil.motionChains[ChainType.Durations.name]?.let { motionLinkPropsList ->
+            for (motionLinkProps in motionLinkPropsList) {
+                item {
+                    motionLinkProps.RenderClickableLink()
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun DurationAnimations() {
+    val screenWidth = LocalConfiguration.current.screenWidthDp
+    val endPosition = screenWidth - 110f
+    for (duration in MotionDuration.values()) {
+        val props = MotionLinkComposableProps(
+            chainId = ChainType.Durations.name,
+            curve = MotionCurve.EasingEase01,
+            linkId = duration.name,
+            motionTypes = hashMapOf(
+                MotionTypeKey.TranslationX.name to TranslationX(
+                    xEnter = 0f,
+                    xIn = endPosition,
+                    xExit = 0f,
+                ),
+                MotionTypeKey.Resize.name to Resize(
+                    wEnter = 100f,
+                    wIn = 100f,
+                    wExit = 100f,
+                    hEnter = 100f,
+                    hIn = 100f,
+                    hExit = 100f,
+                ),
+            ),
+            duration = duration,
+            composable = {
+                Text(
+                    text = duration.name,
+                    color = OneDriveTheme.colors.neutralForeground1,
+                    modifier = Modifier.padding(all = 8.dp),
+                )
+            },
+            onExitAction = {},
+            onEnterAction = {},
+        )
+        MotionUtil.addMotionChainLink(props, props.chainId)
+    }
+}

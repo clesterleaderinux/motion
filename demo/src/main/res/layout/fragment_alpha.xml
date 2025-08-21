@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alpha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="?attr/colorNeutralForeground3"
+        android:text="Alpha"
+        android:textSize="32sp"
+        android:layout_margin="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enter_exit"
+        style="@style/Widget.Fluent2.Button.Accent.Large"
+        android:layout_margin="20dp"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="@string/enter_and_exit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="?attr/colorNeutralBackground1"
+        android:text="XML version"
+        android:layout_margin="8dp" />
+
+    <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+        android:id="@+id/alpha_in_xml"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:alpha="0.1"
+        app:motion_type_key="alpha"
+        app:motion_duration="durationLong01"
+        app:motion_aEnter="0.5"
+        app:motion_aIn="1"
+        app:motion_aExit="0.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_700" />
+    </com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="?attr/colorNeutralBackground1"
+        android:text="Code version"
+        android:layout_margin="8dp" />
+</com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout>

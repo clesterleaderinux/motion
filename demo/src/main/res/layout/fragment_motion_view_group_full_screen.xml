@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.fluentmotion.ui.xml.layouts.MotionViewGroupFullScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/theme_switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorNeutralForeground1"
+        android:background="?attr/colorNeutralBackground1"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Theme switch" />
+
+    <com.microsoft.fluentmotion.ui.xml.base.ThemeableAnimationView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/lottie_typing_indicator"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <com.microsoft.fluentmotion.ui.xml.layouts.MotionViewLinearLayout
+        android:id="@+id/motion_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.microsoft.fluentmotion.ui.xml.layouts.MotionViewGroupFullScreen>

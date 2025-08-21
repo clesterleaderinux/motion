@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.microsoft.fluentxml.demo.DemoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorNeutralBackground1"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|snap">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorNeutralBackground1" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.microsoft.fluentxml.components.SectionHeader
+                android:id="@+id/section_header_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:title="Buttons"
+                app:headerVariant="primary" />
+
+            <GridLayout
+                android:id="@+id/button_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="3"
+                app:layout_constraintTop_toBottomOf="@id/section_header_buttons"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Large"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24"
+                    android:focusable="true"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Medium"
+                    android:layout_margin="10dp"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Small"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Large"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Medium"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Accent.Small"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Large"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline_accent"
+                    android:focusable="true"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Medium"
+                    android:layout_margin="10dp"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Small"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline_accent"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Large"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Medium"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline_accent"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.OutlineAccent.Small"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Outline.Large"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline"
+                    android:focusable="true"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Outline.Medium"
+                    android:layout_margin="10dp"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Outline.Small"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Subtle.Large"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline_accent"
+                    android:focusable="true"
+                    android:text="@string/button_name_large" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Subtle.Medium"
+                    android:layout_margin="10dp"
+                    android:focusable="true"
+                    android:text="@string/button_name_medium" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.Fluent2.Button.Subtle.Small"
+                    android:layout_margin="10dp"
+                    android:drawableStart="@drawable/ic_heart_24_outline_accent"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:text="@string/button_name_small" />
+
+            </GridLayout>
+
+            <com.microsoft.fluentxml.components.SectionHeader
+                android:id="@+id/section_header_grid_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:actionText="Action"
+                app:layout_constraintTop_toBottomOf="@id/button_grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:title="Grid card" />
+
+            <com.microsoft.fluentxml.components.GridCard
+                android:id="@+id/grid_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/section_header_grid_card"
+                app:subtitle="Subheader"
+                app:title="Header" />
+
+            <com.microsoft.fluentxml.components.SectionHeader
+                android:id="@+id/section_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:actionText="Action"
+                app:layout_constraintTop_toBottomOf="@id/grid_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:title="Section header" />
+
+            <com.microsoft.fluentxml.components.SectionHeader
+                android:id="@+id/section_header_switch"
+                app:layout_constraintTop_toBottomOf="@id/section_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Switch" />
+
+            <GridLayout
+                android:id="@+id/grid_layout_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/section_header_switch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:columnCount="4">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    style="@style/Widget.Fluent2.Switch"
+                    android:id="@+id/toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:focusable="true" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    style="@style/Widget.Fluent2.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:checked="true"
+                    android:focusable="true" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    style="@style/Widget.Fluent2.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:checked="false"
+                    android:focusable="true"
+                    android:enabled="false" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    style="@style/Widget.Fluent2.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:checked="true"
+                    android:focusable="true"
+                    android:enabled="false" />
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

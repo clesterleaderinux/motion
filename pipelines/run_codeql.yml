@@ -1,0 +1,55 @@
+parameters:
+  # The FluentXML branch to use
+  - name: FluentXMLRef
+    type: string
+  # The FluentMotion branch to use
+  - name: FluentMotionRef
+    type: string
+
+steps:
+  - checkout: git://SkyDrive/FluentMotion@${{ parameters.FluentMotionRef }}
+    displayName: Checkout FluentMotion
+    clean: true
+    submodules: true
+    fetchDepth: 1
+    fetchTags: false
+    persistCredentials: true
+    retryCountOnTaskFailure: 2
+  - checkout: git://SkyDrive/FluentXML@${{ parameters.FluentXMLRef }}
+    displayName: Checkout FluentXML
+    clean: true
+    submodules: true
+    fetchDepth: 1
+    fetchTags: false
+    persistCredentials: true
+    retryCountOnTaskFailure: 2
+  - task: JavaToolInstaller@0
+    displayName: Use Java 17
+    inputs:
+      versionSpec: 17
+      jdkArchitectureOption: x64
+      jdkSourceOption: PreInstalled
+  - script: |
+      cd FluentXml/
+      echo ./gradlew clean
+      ./gradlew clean
+    displayName: Clean Project
+    env:
+      VSO_USERNAME: $(vso-username)
+      VSO_PASSWORD: $(vso-build-rw)
+
+  - task: CodeQL3000Init@0
+    displayName: 'CodeQL 3000 Init'
+
+  - script: |
+      # This compile the code
+      cd FluentXml/
+      echo ./gradlew compileDebugSource
+      ./gradlew compileDebugSource
+    displayName: Compile Code
+    env:
+      VSO_USERNAME: $(vso-username)
+      VSO_PASSWORD: $(vso-build-rw)
+
+  - task: CodeQL3000Finalize@0
+    displayName: 'CodeQL 3000 Finalize'

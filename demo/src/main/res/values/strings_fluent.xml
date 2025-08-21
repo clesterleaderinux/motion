@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="albums">Albums</string>
+    <string name="moments">Moments</string>
+    <string name="gallery">Gallery</string>
+    <string name="favorites">Favorites</string>
+    <string name="people">People</string>
+</resources>
