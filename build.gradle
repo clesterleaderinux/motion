@@ -38,9 +38,16 @@ ext {
     junitLibraryVersion = '4.13.1'
     kotlin_coroutines_version = '1.6.4'
     recyclerviewLibraryVersion = '1.1.0'
-    kotlin_lifecycle_version = '2.7.0'
+    kotlin_lifecycle_version = '2.8.0'
     mockitoLibraryVersion = '3.12.4'
     mockitoKotlinVersion = '4.0.0'
+    lottieLibraryVersion = '4.1.0'
+    lottieComposeVersion = '6.1.0'
+    compose_version = '1.5.1'
+    accompanist_version = '0.30.1'
+    shimmer_version = '0.5.0'
+    paletteLibraryVersion = '1.0.0'
+    fragmentLibraryVersion = '1.7.1'
 }
 
 task clean(type: Delete) {

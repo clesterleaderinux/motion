@@ -2,16 +2,22 @@ package com.microsoft.fluentmotion
 
 import android.animation.Animator
 import android.animation.ValueAnimator
-import android.content.Context
-import android.os.Build
-import android.view.Display
-import android.view.Surface
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowInsets
-import android.view.WindowManager
 import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertTrue
+import org.junit.Before
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.mockito.Mockito
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 import tfmf.ui.Alpha
 import tfmf.ui.MotionCurve
 import tfmf.ui.MotionDuration
@@ -26,18 +32,6 @@ import tfmf.ui.actions.CancellationError
 import tfmf.ui.util.MotionUtil
 import tfmf.ui.xml.base.IMotionView
 import tfmf.ui.xml.layouts.MotionViewCardViewLayout
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Job
-import org.junit.Assert.assertNotNull
-import org.junit.Assert.assertTrue
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertFalse
-import org.junit.Before
-import org.junit.Test
-import org.junit.runner.RunWith
-import org.mockito.Mockito
-import org.robolectric.RobolectricTestRunner
-import org.robolectric.annotation.Config
 import kotlin.coroutines.CoroutineContext
 
 @Config(manifest = Config.NONE)

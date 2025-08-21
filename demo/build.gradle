@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'tfmf.ui.demo'
+    namespace 'demo.tfmf.ui'
     compileSdkVersion rootProject.ext.projectCompileSdkVersion
     buildToolsVersion rootProject.ext.projectBuildToolsVersion
 
@@ -60,6 +60,7 @@ android {
 
 dependencies {
 
+    implementation project(":lib")
     implementation "androidx.core:core-ktx:$androidxCoreKtLibraryVersion"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.ext.kotlin_lifecycle_version"
     implementation "androidx.compose.material:material:$rootProject.ext.compose_version"

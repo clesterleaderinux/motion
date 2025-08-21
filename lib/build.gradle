@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'tfmf.mobile.ui'
+    namespace 'tfmf.ui.motion'
     compileSdkVersion rootProject.ext.projectCompileSdkVersion
     buildToolsVersion rootProject.ext.projectBuildToolsVersion
 
